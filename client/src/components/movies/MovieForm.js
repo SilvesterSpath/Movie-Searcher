@@ -18,8 +18,7 @@ const MovieForm = () => {
   };
 
   const onSubmit = (event) => {
-    event.preventDefault();
-    console.log(movie);
+    event.preventDefault();  
     getMovie(movie);
   };
 

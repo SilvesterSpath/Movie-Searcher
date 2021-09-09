@@ -52,7 +52,7 @@ const MovieState = (props) => {
   
     try {
       const res = await axios(config)
-      console.log(res.data.data.movies);
+      
       dispatch({
         type: GET_MOVIES,
         payload: res.data.data.movies,
@@ -96,7 +96,7 @@ const MovieState = (props) => {
   
     try {
       const res = await axios(config)
-      console.log(res.data.data.searchMovies);
+      
       dispatch({
         type: GET_MOVIES,
         payload: res.data.data.searchMovies,
